@@ -1,0 +1,19 @@
+.example-container {
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+  }
+  
+  .example-container > * {
+    width: 100%;
+  }
+
+  .center{
+      display: block;
+      text-align: center;
+      margin: auto;
+  }
+
+  .full-width{
+      width: 100%;
+  }

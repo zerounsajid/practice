@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-text-center">login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="example-container">
+    <form [formGroup]="loginForm">
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Email" type=text formControlName="email" required>
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Password" type="password" formControlName="password" required>
+      </mat-form-field>
+    </form>
+  </div>
+  <button mat-button color="primary" class="center" (click)="getLogin()" [disabled]="!loginForm.valid">Submit</button>
+</ion-content>
